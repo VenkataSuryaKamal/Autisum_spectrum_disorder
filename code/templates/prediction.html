@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>Besloor</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+    </div>
+  </div>
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">AUTISM PREDICTION</a></h1>
+      </div>
+
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="/modelselection">Model Selection</a>
+          <li><a href="/prediction">Prediction</a>
+
+
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+  <center>
+      <h3>AUTISM PREDICTION</h3>
+      <h1 style="color:blue;">{{ msg }}</h1>
+  </center>
+  </div>
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="static/layout/scripts/jquery.min.js"></script>
+<script src="static/layout/scripts/jquery.backtotop.js"></script>
+<script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+<center>
+  <form method="post" action="{{url_for('prediction')}}">
+   <table>
+       <center>
+           <tr><td>A1_Score</td>
+               <td><select type="text" name="a1" placeholder="Enter A1_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A2_Score</td>
+               <td><select type="text" name="a2" placeholder="Enter A2_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A3_Score</td>
+               <td><select type="text" name="a3" placeholder="Enter A3_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A4_Score</td>
+               <td><select type="text" name="a4" placeholder="Enter A4_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A5_Score</td>
+               <td><select type="text" name="a5" placeholder="Enter A5_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A6_Score</td>
+               <td><select type="text" name="a6" placeholder="Enter A6_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A7_Score</td>
+               <td><select type="text" name="a7" placeholder="Enter A7_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A8_Score</td>
+               <td><select type="text" name="a8" placeholder="Enter A8_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A9_Score</td>
+               <td><select type="text" name="a9" placeholder="Enter A9_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>A10_Score</td>
+               <td><select type="text" name="a10" placeholder="Enter A10_score" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Zero</option>
+                   <option value="1">One</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+           <tr><td>AGE</td>
+
+               <td><input type="text" name="age" placeholder="Enter Age (4-12)" required></td></tr>
+           <tr ><td height="10"></td></tr>
+
+           <tr><td>GENDER</td>
+               <td><select type="number" name="gender" placeholder="Enter Gender" required>
+                   <option value="-1">Select an option</option>
+                   <option value='0'>Male</option>
+                   <option value='1'>Female</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+
+
+           <tr><td>JUNDICE</td>
+               <td><select name="jundice" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Yes</option>
+                   <option value="1">No</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+
+           <tr><td>AUSTIM</td>
+               <td><select name="autism" required>
+                   <option value="-1">Select an option</option>
+                   <option value="0">Yes</option>
+                   <option value="1">No</option>
+               </select></td></tr>
+           <tr ><td height="10"></td></tr>
+
+
+
+
+       <td>
+    <center><input type="submit" class="btn btn-primary" value="Submit"></center>
+       </td>
+           </center>
+        </table>
+
+  </form>
+
+
+
+    <footer id="footer">
+    </footer><!--/#footer-->
+
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/static/js?sensor=true"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/mousescroll.js"></script>
+    <script src="static/js/smoothscroll.js"></script>
+    <script src="static/js/jquery.prettyPhoto.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/jquery.inview.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/main.js"></script>
+   <script src="static/js/scrolling-nav.js"></script>
+
+<script><!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Diabetics Prediction</title>
+
+   <!-- core STATIC/CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/animate.min.css" rel="stylesheet">
+    <link href="static/css/owl.carousel.css" rel="stylesheet">
+    <link href="static/css/owl.transitions.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <script src="static/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/static/js?sensor=true"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/mousescroll.js"></script>
+    <script src="static/js/smoothscroll.js"></script>
+    <script src="static/js/jquery.prettyPhoto.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/jquery.inview.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/main.js"></script>
+   <script src="static/js/scrolling-nav.js"></script>
+</center>
+</body>
+</center>
+</body>
+</html>
+
+
+</center>
+</html>

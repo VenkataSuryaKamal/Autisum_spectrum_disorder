@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>Autism Prediction</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <h1><a href="home">AUTISM PREDICTION</a></h1>
+      </div>
+       <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/modelselection">Model Selection</a>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="pageintro" class="hoc clear" style="margin-left: 0px;    height: 100000px;">
+  <center>
+    <article style="margin-left: -280px;">
+      <style>
+table, th, td {
+border: 2px solid black;
+border-collapse: collapse;
+}
+</style>
+<section>
+ <center style="height:480px;padding-right:379px;margin-left:60px;">
+     <div> <h1>Data set values</h1>
+         <h1 style="color:blue;">  {{ msg }} </h1>
+         <table style="with:100px;">
+             <tr>
+                 {% for i in col %}
+                 <th style="padding-left:0px;padding-right:0px;">
+                     <a style="color:white;"> {{ i }} </a>
+                 </th>
+                 {% endfor %}
+             </tr>
+             {% for row in data %}
+             <tr>
+                 {% for value in row %}
+                 <td>
+                     <a style="color:blue;">{{ value }}</a>
+                 </td>
+                 {% endfor %}
+             </tr>
+             {% endfor %}
+         </table>
+     </div>
+     <div>
+         <div>
+         </div>
+     </div>
+ </center>
+</section>
+
+ </article>
+
+  </div>
+
+</div>
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="static/layout/scripts/jquery.min.js"></script>
+<script src="static/layout/scripts/jquery.backtotop.js"></script>
+<script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
